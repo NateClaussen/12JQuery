@@ -1,0 +1,21 @@
+footer {
+	background-color: #db4b4b;
+	padding: 2em;
+	text-align: center;
+	color: snow;
+}
+
+#foodCarousel .carousel-item img {
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	height: 50vh;
+}
+
+.hidden {
+	display: none;
+}
+
+img {
+	max-height: 100%;
+}
