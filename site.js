@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	function toggleScroll(e, o) {
+	function toggleScroll(e) {
 		let img = $(e + "Top").find("img");
 		let text = $(e + "Top").find(".card-title");
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 			text.css("font-size:", "1em");
 			$("html, body").animate(
 				{
-					scrollTop: $(e + "Top").offset().top - o,
+					scrollTop: $(e + "Top").offset().top,
 				},
 				500
 			);
@@ -27,7 +27,7 @@ $(document).ready(function () {
 			text.css("font-size:", ".1em");
 			$("html, body").animate(
 				{
-					scrollTop: $(e + "Top").offset().top + o,
+					scrollTop: $(e + "Top").offset().top,
 				},
 				500
 			);
@@ -35,35 +35,33 @@ $(document).ready(function () {
 	}
 
 	$("#card1Button").click(function () {
-		toggleScroll("#card1", 0);
+		toggleScroll("#card1");
 	});
 	$("#card2Button").click(function () {
-		toggleScroll("#card2", 0);
+		toggleScroll("#card2");
 	});
 	$("#card3Button").click(function () {
-		toggleScroll("#card3", 0);
+		toggleScroll("#card3");
 	});
 	$("#card4Button").click(function () {
-		toggleScroll("#card4", 0);
+		toggleScroll("#card4");
 	});
 	$("#card5Button").click(function () {
-		toggleScroll("#card5", 0);
+		toggleScroll("#card5");
 	});
 	$("#card6Button").click(function () {
-		toggleScroll("#card6", 0);
+		toggleScroll("#card6");
 	});
 	$("#card7Button").click(function () {
-		toggleScroll("#card7", 0);
+		toggleScroll("#card7");
 	});
 	$("#card8Button").click(function () {
-		toggleScroll("#card8", 0);
+		toggleScroll("#card8");
 	});
 	$("#card9Button").click(function () {
-		toggleScroll("#card9", 0);
+		toggleScroll("#card9");
 	});
 	$("#card10Button").click(function () {
-		toggleScroll("#card10", 0);
+		toggleScroll("#card10");
 	});
-
-	// $("html, body").scrollTop($("#card1").offset().top);
 });
